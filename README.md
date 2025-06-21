@@ -11,3 +11,4 @@ project rebuild gui installer gpu nvidia 340xx 390xx 470xx 525xx 535xx
 # desktop not works
 6. gnome ( bug font )
 
+![Image](https://github.com/user-attachments/assets/1ba2f086-a40c-426c-a4e4-ff5afd001f66)
