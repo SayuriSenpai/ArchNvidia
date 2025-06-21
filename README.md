@@ -12,3 +12,5 @@ project rebuild gui installer gpu nvidia 340xx 390xx 470xx 525xx 535xx
 6. gnome ( bug font )
 
 ![Image](https://github.com/user-attachments/assets/1ba2f086-a40c-426c-a4e4-ff5afd001f66)
+
+![Image](https://github.com/user-attachments/assets/bb1ca817-4f1d-4100-9df8-3c14d5ec81b4)
