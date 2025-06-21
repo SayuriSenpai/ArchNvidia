@@ -1,0 +1,55 @@
+#!/bin/bash
+
+arr=("1255614-1920x1080-desktop-1080p-nvidia-background-image.jpg"
+"1255614-1920x1080-desktop-1080p-nvidia-background-image.jpg"
+"Linux.svg"
+"logo.png" "pngegg.png" "Symbol.svg")
+
+
+function Files()
+{
+
+    missing=0
+
+# เช็กไฟล์ในอาร์เรย์
+for img in "${arr[@]}"; do
+    if [ ! -f "Image/$img" ]; then
+        echo "❌ Missing file: Image/$img"
+        missing=1
+    fi
+done
+
+# เช็กไฟล์ installer
+if [ ! -f "bin/installer.py" ]; then
+    echo "❌ Missing file: bin/Installer.py"
+    missing=1
+fi
+
+# ถ้ามีไฟล์ใดขาด ให้หยุด
+if [ "$missing" -eq 1 ]; then
+    echo "⚠️  Message: One or more required files are missing."
+    echo "🚫 หยุดการทำงาน เนื่องจากไฟล์ไม่ครบ"
+    exit 1
+fi
+
+# ✅ ถ้าไฟล์ครบทั้งหมด
+echo "✅ ไฟล์ครบทุกอย่าง ดำเนินการต่อได้"
+
+}
+
+function Packge()
+{   
+    echo
+        if  ! which figlet python3 noto-fonts-emoji noto-fonts  ttf-dejavu noto-fonts-cjk noto-fonts-extra  python-pyqt5 > /dev/null;
+        then
+            clear
+             echo "Plesae wait ..."
+            sudo pacman -S figlet python3 noto-fonts-emoji noto-fonts  ttf-dejavu noto-fonts-cjk noto-fonts-extra --noconfirm
+        fi
+
+}
+
+
+Files
+Packge
+python3 Driver.py
