@@ -44,7 +44,7 @@ function Packge()
         then
             clear
              echo "Plesae wait ..."
-            sudo pacman -S figlet python3 noto-fonts-emoji noto-fonts  ttf-dejavu noto-fonts-cjk noto-fonts-extra --noconfirm
+            sudo pacman -S figlet python3 noto-fonts-emoji noto-fonts  ttf-dejavu noto-fonts-cjk noto-fonts-extra python-pyqt5 --noconfirm
         fi
 
 }
