@@ -2,9 +2,9 @@
 project rebuild gui installer gpu nvidia 340xx 390xx 470xx 525xx 535xx
 # how to isntall
 1. open terimial
-2. chmod +x setup.sh
-3. ./setup.sh
-4. python3 Nvidiainstaller.py
+2. chmod +x setup
+3. ./setup
+
 
 # desktop works
 5. xfce
